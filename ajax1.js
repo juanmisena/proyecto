@@ -11,4 +11,4 @@ function getDates() {
             response.innerHTML = `<h1>${this.responseText}</h1>`;
             }
         }
-    }
+}
