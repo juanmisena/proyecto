@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piramide</title>
+</head>
+<body>
+    <fieldset>
+        <input type="number" name="" id="fila" placeholder="Fila" min="1" max="10" autofocus>
+        <button id="enviar">Enviar</button>
+    </fieldset>
+    <p id="demo"></p>
+    <script>
+        let enviar = document.getElementById("enviar");
+        enviar.addEventListener('click', piramide, false);
+        function piramide(){
+            let fila = document.getElementById("fila");
+            parseInt(fila.value);
+            if (fila.value <1 || fila.value>10) {
+                let demo = document.getElementById("demo");
+                demo.innerHTML = "por favor el rango debe ser mayor a 1 y menor a 10";
+            } else {
+                let demo = document.getElementById("demo");
+                demo.innerHTML = fila.value;
+            }
+        }
+        // let n=5;
+        // parseInt(n.value);
+        // for (let i = 1; i <=n; i++) {
+        //     for (let s = 1; s <=n-i; s++) {
+        //         document.write('&nbsp; ');
+        //     }
+        //     for (let j = 1; j <=2 * i-1; j++) {
+        //         document.write(' *');
+        //     }
+        //     document.write('<br>');
+        // }
+        // document.write('<hr>');
+        // document.write('<br>');
+        // for (let i = 1; i <=n; i++) {
+        //     for (let s = 1; s <=n-i; s++) {
+        //         document.write('&nbsp; ');
+        //     }
+        //     for (let j = 1; j <=2 * i-1; j++) {
+        //         if (j == 1 || j == 2 * i-1) {
+        //             document.write(' *');
+        //         } else {
+        //             document.write('&nbsp; ');
+        //         }
+        //     }
+        //     document.write('<br>');
+        // }
+    </script>
+</body>
+</html>
