@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+</head>
+<style>
+    input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+    }
+</style>
+<body>
+    <div class="container mt-3">
+        <div class="row mt-5">
+            <div class="col col-sm-4">
+                <input type="number" name="num1" id="num1" class="form-control" placeholder="Primer Numero">
+                <input type="number" name="num2" id="num2" class="form-control mt-2" placeholder="Segundo Numero">
+                <div class="col col-sm-4 mt-3">
+                    <button id="botonSuma" class="btn btn-primary">Suma</button>
+                </div>
+            </div>
+            <div class="alert alert-light" role="alert" id="alertText">
+              A simple light alert—check it out!
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
